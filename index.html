@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="toyota-head">
+      <h4>Brand logo</h4>
+      <ul class="right-head">
+        <li>USER</li>
+        <li>View</li>
+        <li>Log In</li>
+      </ul>
+    </header>
+    <div class="main">
+      <aside class="aside">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </aside>
+      <div class="panel">
+        <div class="login-form">
+          <span>
+            <label for="user">User</label>
+            <input type="text" placeholder="Username or E-mail" />
+          </span>
+          <span>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" />
+          </span>
+          <button id="login-button" class="login-button" type="submit">Login</button>
+        </div>
+        <hr />
+        <div id="model-input" class="dropdown hidden">
+          <span>
+            <label for="entry-dropdown">Model A:</label>
+            <select id="entry-dropdown" name="options">
+              <option value="A" selected>A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </span>
+          <span>
+            <label for="entry-dropdown">Model B:</label>
+            <select id="entry-dropdown" name="options">
+              <option value="A" selected>A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
