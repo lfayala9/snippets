@@ -8,10 +8,7 @@
     flex-direction: row;
     justify-content: baseline;
 }
-.toyota-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.main-head{
     padding: 6px 14px;
     align-items: center;
     border-bottom: orange solid 2px;
@@ -22,6 +19,9 @@
     list-style: none;
 }
 .right-head > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0px 10px ;
     border-right: solid 2px grey;
     margin: 15px 15px;
@@ -40,13 +40,20 @@
     padding: 0;
 }
 
-.aside > ul > li{
+.side-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 14px;
     cursor: pointer;
     padding: 20px;
 }
-.aside > ul > li:hover{
-    background-color: white;
+.side-button:hover{
+    background-color: bisque;
+}
+.selected{
+    background-color: bisque;
+    font-weight: bold;
 }
 .panel{
     display: flex;
@@ -70,4 +77,9 @@
 
 .hidden{
     display: none;
+}
+
+.bar-icon{
+    width: 20px;
+    height: auto;
 }
