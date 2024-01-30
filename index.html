@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-head">
+      <h4>Brand logo</h4>
+    </header>
+    <div class="main">
+      <aside class="aside">
+        <ul>
+          <li id="home-button" class="side-button selected">
+            Home<img
+              class="bar-icon"
+              src="./assets/icons/home.png"
+              alt="home icon"
+            />
+          </li>
+          <li id="read-button" class="side-button">
+            Read
+            <img
+              class="bar-icon"
+              src="./assets/icons/book.png"
+              alt="read icon"
+            />
+          </li>
+          <li id="history-button" class="side-button">
+            History<img
+              class="bar-icon"
+              src="./assets/icons/history.png"
+              alt="history icon"
+            />
+          </li>
+          <li id="upload-button" class="side-button">
+            Upload<img
+              class="bar-icon"
+              src="./assets/icons/file-upload.png"
+              alt="upload icon"
+            />
+          </li>
+          <li id="ppo-button" class="side-button">
+            PPO
+            <img
+              class="bar-icon"
+              src="./assets/icons/coins.png"
+              alt="ppo icon"
+            />
+          </li>
+        </ul>
+      </aside>
+      <div class="panel">
+        <div class="login-form">
+          <span>
+            <label for="user">User</label>
+            <input type="text" placeholder="Username or E-mail" />
+          </span>
+          <span>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" />
+          </span>
+          <button id="login-button" class="login-button" type="submit">
+            Login
+          </button>
+        </div>
+        <hr />
+        <main>
+          <div id="model-input" class="dropdown hidden">
+            <span>
+              <label for="entry-dropdown">Model A:</label>
+              <select id="entry-dropdown" name="options">
+                <option value="A" selected>A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+              </select>
+            </span>
+            <span>
+              <label for="entry-dropdown">Model B:</label>
+              <select id="entry-dropdown" name="options">
+                <option value="A" selected>A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+              </select>
+            </span>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
