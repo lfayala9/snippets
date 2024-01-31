@@ -2,7 +2,6 @@ from time import sleep
 from fastapi import FastAPI,HTTPException
 import uvicorn
 app = FastAPI()
-import fastapi
 
 @app.get("/")
 async def root():
@@ -20,16 +19,16 @@ async def read_segundacasilla(user:str,password:str,Model_selected:str):
     """Primera casilla. Tarda en desplegar
 
     Args:
-        user (str): admin
-        password (str): password
-        Loca_Model_selected (str): Optain in Read
+        - user (str): admin
+        - password (str): password
+        - Loca_Model_selected (str): Optain in Read
 
     Raises:
-        HTTPException: No correct Local Model
-        HTTPException: Incorrect user/password
+        - HTTPException: No correct Local Model
+        - HTTPException: Incorrect user/password
 
     Returns:
-        _type_: {local models: AQUI LOS MODELOS}
+        - _type_: {local models: AQUI LOS MODELOS}
     """
     sleep(5)
     if Model_selected not in ["Modelo1,Modelo2,Modelo3"]:
@@ -45,16 +44,16 @@ async def Button_START(user:str,password:str,Loca_Model_selected:str):
     Tarda en desplegar
 
     Args:
-        user (str): admin
-        password (str): password
-        Loca_Model_selected (str): Optain in Second_read
+        - user (str): admin
+        - password (str): password
+        - Loca_Model_selected (str): Optain in Second_read
 
     Raises:
-        HTTPException: No correct Local Model
-        HTTPException: Incorrect user/password
+        - HTTPException: No correct Local Model
+        - HTTPException: Incorrect user/password
 
     Returns:
-        _type_: STR
+        - _type_: STR
     """
     sleep(5)
     if Loca_Model_selected not in ["LocalModelo1,LocalModelo2,LocalModelo3"]:
@@ -64,7 +63,6 @@ async def Button_START(user:str,password:str,Loca_Model_selected:str):
     else:
         raise HTTPException(status_code=400, detail="User or password incorrect")
 
-if __name__ == '__main__':
-    print('La API CORRERA EN http://0.0.0.0:8080 ')
-    uvicorn.run(app, host= "0.0.0.0", port=8080)
+#if __name__ == '__main__':
+#    uvicorn.run(app, host= "127.0.0.1",port=8080)
     
