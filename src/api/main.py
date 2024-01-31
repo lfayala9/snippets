@@ -63,6 +63,6 @@ async def Button_START(user:str,password:str,Loca_Model_selected:str):
     else:
         raise HTTPException(status_code=400, detail="User or password incorrect")
 
-if __name__ == '__main__':
-    uvicorn.run(app, host= "127.0.0.1",port=8080)
+#if __name__ == '__main__':
+#    uvicorn.run(app, host= "127.0.0.1",port=8080)
     
