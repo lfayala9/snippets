@@ -3,83 +3,108 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.main{
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
 }
-.main-head{
-    padding: 6px 14px;
-    align-items: center;
-    border-bottom: orange solid 2px;
+.main-head {
+  padding: 6px 14px;
+  align-items: center;
+  border-bottom: orange solid 2px;
 }
-.right-head{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.right-head {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
-.right-head > li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10px ;
-    border-right: solid 2px grey;
-    margin: 15px 15px;
+.right-head > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  border-right: solid 2px grey;
+  margin: 15px 15px;
 }
-.right-head > li:hover{
-    cursor: pointer;
-    text-decoration: underline;
+.right-head > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
-.aside{
-    background-color: #eaeaea;
-    height: 90vh;
+.aside {
+  background-color: #eaeaea;
+  height: 90vh;
 }
 
 .aside > ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
-.side-button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 20px;
+.side-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 20px;
 }
-.side-button:hover{
-    background-color: bisque;
+.side-button:hover {
+  background-color: bisque;
 }
-.selected{
-    background-color: bisque;
-    font-weight: bold;
+.selected {
+  background-color: bisque;
+  font-weight: bold;
 }
-.panel{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.login-form{
+.login-form {
+  padding: 30px;
+  display: flex;
+  gap: 25px;
+}
+.dropdown {
+  display: flex;
+  gap: 35px;
+  padding: 30px;
+}
+
+.login-button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.bar-icon {
+  width: 20px;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.upload-form{
+    border: solid 1px black;
     padding: 30px;
     display: flex;
-    gap: 25px;
-}
-.dropdown{
-    display: flex;
-    gap: 35px;
-    padding: 30px
-}
-
-.login-button{
-    cursor: pointer;
-}
-
-.hidden{
-    display: none;
-}
-
-.bar-icon{
-    width: 20px;
-    height: auto;
+    flex-direction: column;
+    width: 40%;
+    align-items: start;
+    gap: 15px;
 }
