@@ -69,27 +69,77 @@
         </div>
         <hr />
         <main>
-          <div id="model-input" class="dropdown hidden">
-            <span>
-              <label for="entry-dropdown">Model A:</label>
-              <select id="entry-dropdown" name="options">
-                <option value="A" selected>A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="E">E</option>
-              </select>
-            </span>
-            <span>
-              <label for="entry-dropdown">Model B:</label>
-              <select id="entry-dropdown" name="options">
-                <option value="A" selected>A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="E">E</option>
-              </select>
-            </span>
+          <div id="home-content" class="hidden">
+            <div id="model-input" class="dropdown">
+              <span>
+                <label for="entry-dropdown">Model A:</label>
+                <select id="entry-dropdown" name="options">
+                  <option value="A" selected>A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </span>
+              <span>
+                <label for="entry-dropdown">Model B:</label>
+                <select id="entry-dropdown" name="options">
+                  <option value="A" selected>A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </span>
+            </div>
+          </div>
+          <div id="read-content" class="hidden">
+            <h1>Read content</h1>
+            <p>Generic content about something, read-only apparently</p>
+          </div>
+          <div id="history-content" class="hidden">
+            <table>
+              <thead>
+                <tr>
+                  <th>Index 1</th>
+                  <th>Index 2</th>
+                  <th>Index 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data 1</td>
+                  <td>Data 2</td>
+                  <td>Data 3</td>
+                </tr>
+                <tr>
+                  <td>Data 4</td>
+                  <td>Data 5</td>
+                  <td>Data 6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="upload-content" class="hidden">
+            <form
+              class="upload-form"
+              action="/file/root"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <label for="archivo">Select a file:</label>
+              <input
+                type="file"
+                id="archivo"
+                name="archivo"
+                accept=".pdf, .doc, .docx"
+              />
+              <input type="submit" value="Upload File" />
+            </form>
+          </div>
+          <div id="ppo-content" class="hidden">
+            <h1>PPO Content</h1>
+            <p>Generic content</p>
           </div>
         </main>
       </div>
