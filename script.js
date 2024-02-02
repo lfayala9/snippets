@@ -60,3 +60,16 @@ ppoButton.addEventListener("click", ppoClick);
 packsButton.addEventListener("click", packsClick)
 
 // Complex API Calls and spreadsheets displays
+
+async function dataFromAPI() {
+  try {
+    const response = await fetch('https://api-jesus.fly.dev/docs');
+    if (!response.ok) {
+      throw new Error('Error');
+    }
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
